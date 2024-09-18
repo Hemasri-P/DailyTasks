@@ -1,9 +1,13 @@
-## Tuesday(17/09/2024) : Task 
--  Display some data in grid format using Blazor and Add button functionality to a column  to sort data  , perform Bunit Testing
-- Status : Display Employee data in grid format is completed ,sort the data accordingly and bUnit Testing is pending 
-## Wednesday(19/1/09/2024) : 
+## Tuesday(17/09/2024) : Task
+
+- Display some data in grid format using Blazor and Add button functionality to a column to sort data , perform Bunit Testing
+- Status : Display Employee data in grid format is completed ,sort the data accordingly and bUnit Testing is pending
+
+## Wednesday(19/1/09/2024) :
+
 - bunit , test cases for checking id should be unique
-add project solution to the existing project , install bunit package to new testing project , write code to test the scenarios
+  add project solution to the existing project , install bunit package to new testing project , write code to test the scenarios
+
 ### test case in bunit task
 
 ```c#
@@ -26,17 +30,17 @@ namespace TaskTesting
 
             //assert :verifies the result of the action is what we expected
             Assert.NotNull(table);
-         
+
         }
         [Fact]
         public void ButtonWorking()
         {
             var cut = RenderComponent<EmployeeData>();
-            
+
 
             cut.Find("Button").Click();
             var RowsAfterClick = cut.FindAll("td");
-            
+
 
             cut.Find("Button").Click();
             var rowsAfterSecondClick = cut.FindAll("td");
@@ -60,8 +64,8 @@ namespace TaskTesting
 
         }
         [Fact]
-        public void CheckCellsCount() 
-        { 
+        public void CheckCellsCount()
+        {
             var cut=RenderComponent<EmployeeData>();
             var ColumnsCount = cut.FindAll("th").Count();
             var RowsCount = cut.FindAll("td").Count();
@@ -85,16 +89,20 @@ namespace TaskTesting
             Assert.Contains("Phone", HeaderCount[4].TextContent);
             Assert.Contains("Salary", HeaderCount[5].TextContent);
         }
-        
+
     }
-    
-   
-   
+
+
+
 }
 ```
-### AAA methodology
-- 
- 
 
-### Positive and Negative Test Cases 
+### AAA methodology
+
+-
+
+### Positive and Negative Test Cases
+
 ### code coverage ? in bunit
+
+### first
