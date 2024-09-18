@@ -99,10 +99,21 @@ namespace TaskTesting
 
 ### AAA methodology
 
--
+- The Arrange section of a unit test method initializes objects and sets the value of the data that is passed to the method under test.
+
+- The Act section invokes the method under test with the arranged parameters.
+
+- The Assert section verifies that the action of the method under test behaves as expected. For .NET, methods in the Assert class are often used for verification.
 
 ### Positive and Negative Test Cases
 
-### code coverage ? in bunit
+## CODE COVERAGE
 
-### first
+- quantifies the extent to which the source code of a program is tested
+- Statement Coverage : Measures whether each line of code is executed.
+- Branch Coverage : Measures whether each possible branch (true/false) from each decision point is executed.
+- Function Coverage : Measures whether each function or subroutine in the code is called.
+- Condition Coverage : Measures whether each Boolean sub-expression is evaluated to both true and false.
+- Path Coverage : Measures whether all possible paths through the code are executed.
+- Line Coverage : Measures the number of executed lines divided by the total number of lines.
+- Loop Coverage : Measures whether loops are executed and how many times.
