@@ -210,6 +210,17 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON SCHEMA::new_schema_name TO user_name;
 - Testing: Before fully integrating the new schema, test your queries and operations to ensure that everything works as expected without conflicts.
   By following these steps, you can effectively use another schema in your system, even if it contains tables with the same names as those in your curreqnt schema
 
-## Wednesday(25/09/2024)
+## Thursday(03/10/2024)
 
+- https://learn.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory-dot-net#create-a-pipeline-run
+- Azure Data factory:
+- ![alt text](image-4.png)
+
+## Friday(04/01/2024)
+
+### Azure data factory and pipeline using .NET SDK
+
+- https://github.com/eathanspark/TriggerADF/tree/master/TriggerADFPipeline/TriggerADFPipeline
+- Prerequisites for Azure data factory to trigger the pipeline:
+- ![alt text](image-5.png)
 -
